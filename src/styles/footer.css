@@ -78,7 +78,7 @@
     color: #333;
 }
 
-@media only screen and (max-width:1115px) {
+@media only screen and (max-width:1024px) {
     .newsletter span {
         margin-left: -40px;
     }
@@ -96,4 +96,27 @@
 .copyright__text {
     font-style: 0.8rem;
     color: rgb(22, 128, 128);
+}
+
+@media only screen and (max-width:576px) {
+    .social__links {
+        justify-content: center;
+    }
+
+    .social__links p {
+        font-size: .8rem;
+    }
+
+    .social__links span {
+        padding: 4px;
+    }
+
+    .social__links span a {
+        font-size: 0.7rem;
+    }
+
+    .copyright__text {
+        font-size: .8rem;
+        text-align: center;
+    }
 }

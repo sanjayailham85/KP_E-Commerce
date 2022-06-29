@@ -137,7 +137,7 @@ const Home = () => {
 
                 {
                     featureData.map((item, index)=>(
-                        <Col lg="4" md="4" key={index} className="mt-3">
+                        <Col lg="4" md="6" sm="6" key={index} className="mt-3">
                         <div className="feature__item text-center px-5 py-3 mb-5">
                             <img src={item.imgUrl} alt="feature-img" className="w-10 mb-3 p-3"/>
                             <h5 className="fw-bold mb-3">{item.title}</h5>
@@ -186,7 +186,7 @@ const Home = () => {
                 </Col>
 
               {allProducts.map((item) => (
-                <Col lg='3' md='4' key={item.id} className="mt-5">
+                <Col lg='3' md='4' sm="6" xs="6" key={item.id} className="mt-5">
                     <ProductCard item={item}/>
                </Col>
                 ))}
@@ -208,7 +208,7 @@ const Home = () => {
                     <h2 className="device__shop-title mb-4">Why <span>Device Shop?</span> </h2>
                     <p className="device__shop-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae quam tenetur odit dolorum facilis fuga placeat voluptas deserunt quod ducimus possimus aut ratione dicta, doloribus consectetur modi quidem quis ea.</p>
 
-                    <ListGroup className="mt-5">
+                    <ListGroup className="mt-4">
                         <ListGroupItem className="border-0 ps-0">
                             <p className="choose__us-title d-flex align-items-center gap-2"><i className="ri-checkbox-circle-line"></i>
                             Lorem ipsum dolor sit amet.</p>
@@ -242,7 +242,7 @@ const Home = () => {
 
                 {
                     limitedSmartphone.map((item) => (
-                        <Col lg="3" md="4" key={item.id}>
+                        <Col lg="3" md="4" sm="6" xs="6" key={item.id}>
                             <ProductCard item={item} />
                         </Col>
                     ))
