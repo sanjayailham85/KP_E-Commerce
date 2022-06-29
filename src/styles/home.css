@@ -1,0 +1,76 @@
+.feature__subtitle {
+    color: rgb(12, 93, 93);
+}
+
+.feature__text {
+    color: #777;
+}
+
+.feature__item p{
+    color: #777;
+}
+
+.device__category {
+    background: rgba(121, 220, 220, 0.564);
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px 0px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.device__category button {
+
+    border:none;
+    outline: none;
+    padding: 7px 20px;
+    background: transparent;
+    
+}
+
+.device__category button img{
+    width: 30px;
+    height: 30px;
+}
+
+.deviceBtnActive {
+    background: #fff !important;
+    border-radius: 5px;
+    color: rgb(12, 93, 93) ;
+}
+
+.device__shop-title span{
+    color: rgb(12, 93, 93);
+}
+
+.device__shop-desc {
+    color: #777;
+    line-height: 28px;
+}
+
+.choose__us-title {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.choose__us-title i {
+    color: rgb(12, 93, 93) ;
+    font-weight: 500 !important;
+}
+
+.choose__us-desc {
+    color: #777;
+}
+
+.testimonial__subtitle {
+    color: rgb(12, 93, 93) ;
+}
+
+.testimonial__title span{
+    color: rgb(12, 93, 93);
+}
+
+.testimonial__desc {
+    color: #777;
+    line-height: 30px;
+}
