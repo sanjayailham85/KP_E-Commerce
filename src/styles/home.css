@@ -1,3 +1,7 @@
+.hero__content {
+    padding: 5px;
+}
+
 .feature__subtitle {
     color: rgb(12, 93, 93);
 }
@@ -192,3 +196,4 @@
         height: 20px;
     }
 }
+

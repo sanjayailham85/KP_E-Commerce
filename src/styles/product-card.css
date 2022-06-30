@@ -16,17 +16,20 @@
 
 .product__content h5 a {
     color: #212245;
-    font-size: 1rem;
+    font-size: 1.2rem;
+    
 }
 
 .product__content h5 {
     margin-bottom: 30px;
+    
 }
 
 .product__price {
     font-weight: 600;
-    font-style: 1.2rem;
+    font-size: 1.2rem;
     color: #212245;
+    text-align: center;
 }
 
 .AddToCart__btn {
@@ -40,9 +43,7 @@
 
 @media only screen and (max-width:1024px) {
   
-    .product__content h5 a{
-        font-size: 0.8rem;
-    }
+    
     .AddToCart__btn {
         padding: 5px 15px;
         font-size: .8rem;
@@ -57,5 +58,39 @@
     .AddToCart__btn {
         padding: 5px 15px;
         font-size: .8rem;
+    }
+}
+
+@media only screen and (max-width:768px) {
+  
+    .product__content h5 a{
+        font-size: 0.8rem;
+    }
+    .AddToCart__btn {
+        padding: 5px 15px;
+        font-size: .8rem;
+    }
+
+    .product__price {
+        font-weight: 600;
+        font-size: 0.8rem;
+        color: #212245;
+    }
+}
+
+@media only screen and (max-width:375px) {
+  
+    .product__content h5 a{
+        font-size: 0.8rem;
+    }
+    .AddToCart__btn {
+        padding: 5px 10px;
+        font-size: .5rem;
+    }
+
+    .product__price {
+        font-weight: 600;
+        font-size: 0.8rem;
+        color: #212245;
     }
 }

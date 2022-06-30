@@ -186,7 +186,7 @@ const Home = () => {
                 </Col>
 
               {allProducts.map((item) => (
-                <Col lg='3' md='4' sm="6" xs="6" key={item.id} className="mt-5">
+                <Col lg='3' md='4' sm="6" xs="6" key={item.id} className="mt-4">
                     <ProductCard item={item}/>
                </Col>
                 ))}
@@ -199,12 +199,12 @@ const Home = () => {
         <Container>
         <Row>
             <Col lg='6' md='6'> 
-            <div className="mt-5"><img src={devImg} alt="why-device-shop" className="w-100"/></div>
+            <div className="mt-5"><img src={devImg} alt="why-device-shop" className="why__img w-100"/></div>
             </Col>
            
 
             <Col lg='6' md='6'>
-                <div className="why__device-shop mt-5 mb-5">
+                <div className="why__device-shop mt-5">
                     <h2 className="device__shop-title mb-4">Why <span>Device Shop?</span> </h2>
                     <p className="device__shop-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae quam tenetur odit dolorum facilis fuga placeat voluptas deserunt quod ducimus possimus aut ratione dicta, doloribus consectetur modi quidem quis ea.</p>
 
@@ -236,13 +236,13 @@ const Home = () => {
     <section className="pt-0">
         <Container>
             <Row>
-                <Col lg="12" className="text-center mt-5 mb-5">
+                <Col lg="12" className="text-center mt-5">
                     <h2>Limited Smartphone</h2>
                 </Col>
 
                 {
                     limitedSmartphone.map((item) => (
-                        <Col lg="3" md="4" sm="6" xs="6" key={item.id}>
+                        <Col lg="3" md="4" sm="6" xs="6" className="mt-4" key={item.id}>
                             <ProductCard item={item} />
                         </Col>
                     ))

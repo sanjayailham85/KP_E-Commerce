@@ -38,7 +38,7 @@ import product_07_image_01 from "../images/tablet3.jpg"
 const products = [
   {
     id: "01",
-    title: "lorem",
+    title: "Smartphone1",
     price: "Rp.xx",
     image01: product_01_image_01,
     image02: product_01_image_01,
@@ -52,7 +52,7 @@ const products = [
 
   {
     id: "02",
-    title: "lorem",
+    title: "Smartphone2",
     price: "Rp.xx",
     image01: product_02_image_01,
     image02: product_01_image_01,
@@ -66,7 +66,7 @@ const products = [
 
   {
     id: "03",
-    title: "lorem",
+    title: "Smartphone3",
     price: "Rp.xx",
     image01: product_03_image_01,
     image02: product_01_image_01,
@@ -80,7 +80,7 @@ const products = [
 
   {
     id: "13",
-    title: "lorem",
+    title: "Smartphone4",
     price: "Rp.xx",
     image01: product_04_image_01,
     image02: product_01_image_01,
@@ -137,7 +137,7 @@ const products = [
 
   {
     id: "07",
-    title: "lorem",
+    title: "Tablet1",
     price: "Rp.xx",
     image01: product_05_image_01,
     image02: product_01_image_01,
@@ -151,7 +151,7 @@ const products = [
 
   {
     id: "08",
-    title: "lorem",
+    title: "Tablet2",
     price: "Rp.xx",
     image01: product_06_image_01,
     image02: product_01_image_01,
@@ -165,7 +165,7 @@ const products = [
 
   {
     id: "09",
-    title: "lorem",
+    title: "Tablet3",
     price:"Rp.xx",
     image01: product_07_image_01,
     image02: product_01_image_01,
