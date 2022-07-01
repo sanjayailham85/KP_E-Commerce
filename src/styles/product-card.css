@@ -11,13 +11,13 @@
 }
 
 .product__img:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .product__content h5 a {
     color: #212245;
     font-size: 1.2rem;
-    
+    text-decoration: none;
 }
 
 .product__content h5 {
@@ -39,6 +39,12 @@
     color: #fff;
     border-radius: 5px;
     font-size: 0.9rem;
+    transition: 0.4s;
+    
+}
+
+.AddToCart__btn:hover {
+    transform: scale(1.1);
 }
 
 @media only screen and (max-width:1024px) {
