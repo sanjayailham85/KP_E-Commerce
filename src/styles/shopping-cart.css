@@ -72,3 +72,40 @@
     color: #212245;
     font-weight: 600;
 }
+
+@media only screen and (max-width:768px) {
+    .cart {
+        width: 300px;
+    }
+
+    .cart__close span i {
+        font-size: .9rem;
+    }
+
+    .cart__item-list h6{
+        font-size: .8rem;
+    }
+
+    .cart__bottom h6 {
+        font-size: .8rem;
+    }
+
+    .cart__bottom h6 span {
+        font-size: 1rem;
+    }
+
+
+    .cart__bottom button {
+        font-size: .8rem;
+    }
+
+    .cart__bottom button a{
+        font-size: .8rem;
+    }
+}
+
+@media only screen and (max-width:375px) {
+    .cart {
+        width: 250px;
+    }
+}
