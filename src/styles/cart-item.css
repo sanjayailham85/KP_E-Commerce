@@ -55,3 +55,9 @@
         font-size: .8rem;
     }
 }
+
+@media only screen and (max-width:375px) {
+    .cart__item {
+        margin-bottom: 30px;
+    }
+}
