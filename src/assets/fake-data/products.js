@@ -33,7 +33,7 @@ const products = [
   {
     id: "02",
     title: "Smartphone2",
-    price: "Rp.1000.000",
+    price: 1000,
     image01: product_02_image_01,
     image02: product_01_image_01,
     image03: product_01_image_01,
@@ -47,7 +47,7 @@ const products = [
   {
     id: "03",
     title: "Smartphone3",
-    price: "Rp.1000.000",
+    price: 1000,
     image01: product_03_image_01,
     image02: product_01_image_01,
     image03: product_01_image_01,
@@ -61,7 +61,7 @@ const products = [
   {
     id: "13",
     title: "Smartphone4",
-    price: "Rp.1000.000",
+    price: 1000,
     image01: product_04_image_01,
     image02: product_01_image_01,
     image03: product_01_image_01,
@@ -75,7 +75,7 @@ const products = [
   {
     id: "07",
     title: "Tablet1",
-    price: "Rp.1000.000",
+    price: 1000,
     image01: product_05_image_01,
     image02: product_01_image_01,
     image03: product_01_image_01,
@@ -89,7 +89,7 @@ const products = [
   {
     id: "08",
     title: "Tablet2",
-    price: "Rp.1000.000",
+    price: 1000,
     image01: product_06_image_01,
     image02: product_01_image_01,
     image03: product_01_image_01,
@@ -103,7 +103,7 @@ const products = [
   {
     id: "09",
     title: "Tablet3",
-    price:"Rp.1000.000",
+    price:1000,
     image01: product_07_image_01,
     image02: product_01_image_01,
     image03: product_01_image_01,
