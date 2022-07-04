@@ -19,7 +19,7 @@ const products = [
   {
     id: "01",
     title: "Smartphone1",
-    price: "Rp.1000.000",
+    price: 1000,
     image01: product_01_image_01,
     image02: product_01_image_01,
     image03: product_01_image_01,
