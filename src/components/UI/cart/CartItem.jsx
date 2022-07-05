@@ -1,6 +1,6 @@
 import React from 'react'
 import { List, ListGroupItem } from 'reactstrap'
-import productImg from '../../../assets/images/hp4.jpg'
+
 import "../../../styles/cart-item.css"
 
 import { useDispatch } from 'react-redux'

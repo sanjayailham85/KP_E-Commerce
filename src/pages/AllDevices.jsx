@@ -15,7 +15,7 @@ const AllDevices = () => {
     const [searchTerm, setSearchTerm] = useState('')
     const [pageNumber, setPageNumber] = useState(0)
 
-    const productPerPage = 2
+    const productPerPage = 4
     const visitedPage = pageNumber * productPerPage
     const displayPage = products.slice(visitedPage, visitedPage + productPerPage)
 

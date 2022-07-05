@@ -1,5 +1,7 @@
 // all images imported from images directory
 import product_01_image_01 from "../images/hp4.jpg";
+import product_01_image_02 from "../images/hp2.jpg"
+import product_01_image_03 from "../images/hp5.jpg"
 
 import product_02_image_01 from "../images/hp2.jpg";
 
@@ -21,8 +23,8 @@ const products = [
     title: "Smartphone1",
     price: 1000,
     image01: product_01_image_01,
-    image02: product_01_image_01,
-    image03: product_01_image_01,
+    image02: product_01_image_02,
+    image03: product_01_image_03,
     // image02: product_01_image_02,
     // image03: product_01_image_03,
     category: "Smartphone",
