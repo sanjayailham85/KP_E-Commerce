@@ -28,3 +28,13 @@
 .paginationBttns a:hover{
     background: #212245;
 }
+
+@media only screen and (max-width:425px) {
+    .paginationBttns {
+        padding-left: 10px;
+    }
+    
+    .paginationBttns a {
+        font-size: .8rem;       
+    }   
+}

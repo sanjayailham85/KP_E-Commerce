@@ -7,20 +7,51 @@ import { Container, Row, Col } from "reactstrap";
 
 import '../styles/product-details.css'
 
-import productImg from '../assets/images/hp4.jpg'
+import ProductCard from '../components/UI/product-card/ProductCard'
+import { cartActions } from "../store/shopping-cart/cartSlice";
+
+import { useDispatch } from "react-redux";
 
 const DevicesDetails = () => {
 
-    const [tab, useTab] = useState('desc')
+    const [tab, setTab] = useState('desc')
+    const [enteredName, setEnteredName] = useState('')
+    const [enteredEmail, setEnteredEmail] = useState('')
+    const [reviewMsg, setReviewMsg] = useState('')
     const {id} = useParams()
+    const dispatch = useDispatch()
 
-    const product = products.find(product=> product.id === id)
-    const [previewImg, setPreviewImg] = useState(product.image01)
+    const product = products.find(product=> product.id === id);
+    const [previewImg, setPreviewImg] = useState(product.image01);
+    const {title, price, category, desc, image01} = product;
+
+    const relatedProduct = products.filter(item=> category === item.category)
+
+    const addItem = ()=> {
+        dispatch(cartActions.addItem({
+            id,
+            title,
+            price,
+            image01
+        }))
+    }
+
+    const submitHandler =e=> {
+        e.preventDefault()
+    }
+
+    useEffect(()=> {
+        setPreviewImg(product.image01)
+    },[product])
+
+    useEffect(()=> {
+        window.scrollTo(0,0)
+    },[product])
 
    
 
     return <Helmet title= "Product-details">
-        <CommonSection title="product 01"/>
+        <CommonSection title={title}/>
 
         <section>
             <Container className="mt-5">
@@ -48,30 +79,34 @@ const DevicesDetails = () => {
 
                     <Col lg="6" md="6">
                         <div className="single__product-content">
-                            <h2 className="product__title mb-2">Lorem, ipsum dolor.</h2>
+                            <h2 className="product__title mb-2">{title}</h2>
                             <p className="product__price">
                                 {" "}
-                                Price: <span>Rp.xx</span>
+                                Price: <span>Rp.{price}</span>
                             </p>
                             
-                            <p className="category mb-5">Category: <span> Smartphone</span></p>
-                            <button className="addToCart__btn">Add to Cart</button>
+                            <p className="category mb-5">Category: <span>{category}</span></p>
+                            <button onClick={addItem} className="addToCart__btn">Add to Cart</button>
                         </div>
                     </Col>
 
                     <Col lg="12" className="mt-5">
+
                         <div className="tabs d-flex align-items-center gap-5 py-3">
-                            <h6 className="tab__active">Description</h6>
-                            <h6>Review</h6>
+                            <h6 className={`${tab === 'desc' ? "tab__active" : ""}`} onClick={()=> setTab('desc')}>Description</h6>
+
+                            <h6 className={`${tab === 'rev' ? "tab__active" : ""}`} onClick={()=> setTab('rev')}>Review</h6>
                         </div>
 
-                        <div className="tab__content">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nisi veniam dolorem voluptatem atque illum placeat ea fugit ipsa reiciendis, quisquam soluta fuga corrupti dignissimos nostrum quae numquam maiores magni suscipit temporibus eveniet sapiente optio repudiandae ut. Velit, voluptates doloremque.</p>
+                        {
+                            tab === "desc" ?  (
+                            <div className="tab__content">
+                            <p>{desc}</p>
                         </div>
+                         ) : (
+                         <div className="tab__form">
 
-                        <div className="tab__form">
-
-                            <div className="tab__form mb-3">
+                            <div className="tab__form mb-3 pt-4">
                                 <div className="review">
                                     <p className="user__name mb-0">Jhon Doe</p>
                                     <p className="user__email">jhon1@gmail.com</p>
@@ -91,23 +126,54 @@ const DevicesDetails = () => {
                                 </div>
 
                             </div>
-                            <form className="form">
+                            <form className="form" onSubmit={submitHandler}>
                                 <div className="form__group">
-                                    <input type="text" placeholder="Enter Your Name" />
+                                    <input 
+                                        type="text" 
+                                        placeholder="Enter Your Name" 
+                                        onChange={e=> setEnteredName(e.target.value)} 
+                                        required/>
                                 </div>
 
                                 <div className="form__group">
-                                    <input type="text" placeholder="Enter Your Name" />
+                                    <input 
+                                        type="text" 
+                                        placeholder="Enter Your Email"  
+                                        onChange={e=> setEnteredEmail(e.target.value)} 
+                                        required/>
                                 </div>
 
                                 <div className="form__group">
-                                    <textarea rows={5} type="text" placeholder="Enter Your Name" />
+                                    <textarea 
+                                        rows={5} 
+                                        type="text" 
+                                        placeholder="Write Your Review" 
+                                        onChange={e=> setReviewMsg(e.target.value)} 
+                                        required/>
                                 </div>
 
-                                <button type="submit" className="addToCart__btn">Submit</button>
+                                <button 
+                                    type="submit" 
+                                    className="addToCart__btn">
+                                    Submit
+                                </button>
                             </form>
-                        </div>
+                        </div> )
+                        }  
                     </Col>
+
+                    <Col lg="12" className="mb-5 mt-5">
+                        <h2 className="related__product-title">You might also like</h2>
+                    </Col>
+
+                    {
+                        relatedProduct.map(item=> (
+                            <Col lg="3" md="4" sm="6" xs="6" className="mb-4" key={item.id}>
+                                <ProductCard item={item}/>
+                            </Col>
+                        ))
+                    }
+
                 </Row>
             </Container>
         </section>
