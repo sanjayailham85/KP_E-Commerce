@@ -5,9 +5,13 @@
     cursor: pointer;
 }
 
-.product__img {
+.product__img img {
     margin-bottom: 20px;
     transition: 0.4s;
+    max-width: 154px;
+    max-height: 154px;
+    min-height: 154px;
+    min-width: 154px;
 }
 
 .product__img:hover {
@@ -98,5 +102,10 @@
         font-weight: 600;
         font-size: 0.8rem;
         color: #212245;
+    }
+
+    .product__img img {
+        
+        width: 80%;
     }
 }

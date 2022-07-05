@@ -41,12 +41,19 @@ const Home = () => {
     const [allProducts, setAllProducts] = useState(products)
 
     const [limitedSmartphone, setLimitedSmartphone] = useState ([])
+    const [limitedSmartphone2, setLimitedSmartphone2] = useState ([])
 
     useEffect (() => {
         const filteredSmartphone = products.filter(item=> item.category === 'Smartphone')
         const sliceSmartphone = filteredSmartphone.slice(0,4)
         setLimitedSmartphone(sliceSmartphone)
     }, [])
+
+    // useEffect(()=> {
+    //     const filteredSmartphone2 = products.filter(item=> item.category === 'Smartphone')
+    //     const sliceSmartphone2 = filteredSmartphone2.slice(6, 16)
+    //     setLimitedSmartphone2(sliceSmartphone2)
+    // }, [])
 
     useEffect(() =>{
         
@@ -191,6 +198,14 @@ const Home = () => {
                </Col>
                 ))}
 
+                {/* {
+                    limitedSmartphone2.map((item) => (
+                        <Col lg="3" md="4" sm="6" xs="6" className="mt-4" key={item.id}>
+                            <ProductCard item={item} />
+                        </Col>
+                    ))
+                } */}
+
             </Row>
         </Container>
     </section>
@@ -247,6 +262,8 @@ const Home = () => {
                         </Col>
                     ))
                 }
+
+               
             </Row>
         </Container>
     </section>
