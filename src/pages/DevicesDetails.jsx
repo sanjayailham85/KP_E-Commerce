@@ -36,8 +36,17 @@ const DevicesDetails = () => {
         }))
     }
 
+    const reviewInfo = []
     const submitHandler =e=> {
         e.preventDefault()
+        const userReview = {
+            name: enteredName,
+            email: enteredEmail,
+            review: reviewMsg
+        }   
+
+        reviewInfo.push(userReview)
+        console.log(reviewInfo)
     }
 
     useEffect(()=> {
@@ -131,8 +140,7 @@ const DevicesDetails = () => {
                                     <input 
                                         type="text" 
                                         placeholder="Enter Your Name" 
-                                        onChange={e=> setEnteredName(e.target.value)} 
-                                        required/>
+                                        required onChange={e=> setEnteredName(e.target.value)} />
                                 </div>
 
                                 <div className="form__group">
