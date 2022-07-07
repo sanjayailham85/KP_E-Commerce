@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../../../styles/product-card.css';
 import { useDispatch } from 'react-redux';
 import { cartActions } from '../../../store/shopping-cart/cartSlice';
+import { toast, ToastContainer } from 'react-toastify';
 
-import { ToastContainer, toast } from 'react-toastify';
+import '../../../styles/product-card.css';
 import 'react-toastify/dist/ReactToastify.css';
 
 const ProductCard = (props) => {
@@ -23,7 +23,7 @@ const ProductCard = (props) => {
   };
 
   const notify = () => {
-    toast.success('Item add to cart', {
+    toast.success('Item added to cart', {
       position: 'bottom-right',
       autoClose: 5000,
       hideProgressBar: false,
@@ -31,6 +31,7 @@ const ProductCard = (props) => {
       pauseOnHover: true,
       draggable: false,
       progress: undefined,
+      className: 'notify',
     });
   };
 
@@ -54,6 +55,7 @@ const ProductCard = (props) => {
         <div className="d-flex justify-content-center mt-3 mb-3">
           <span className="product__price">Rp.{price}</span>
         </div>
+
         <div>
           <button className="AddToCart__btn" onClick={callDouble}>
             Add to Cart

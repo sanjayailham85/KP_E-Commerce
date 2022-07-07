@@ -1,23 +1,24 @@
 import React, { useState, useEffect } from 'react';
-import Helmet from '../components/Helmet/Helmet';
 import { Container, Row, Col, ListGroup, ListGroupItem } from 'reactstrap';
-import heroImg from '../assets/images/fotoHome1.jpg';
-import '../styles/hero-section.css';
 import { Link } from 'react-router-dom';
-import Category from '../components/UI/category/Category';
-import '../styles/home.css';
 
+import Helmet from '../components/Helmet/Helmet';
+import Category from '../components/UI/category/Category';
+import ProductCard from '../components/UI/product-card/ProductCard';
+import TestimonialSlider from '../components/UI/slider/TestimonialSlider';
+import products from '../assets/fake-data/products';
+
+import '../styles/hero-section.css';
+import '../styles/home.css';
+import 'react-toastify/dist/ReactToastify.css';
+
+import heroImg from '../assets/images/fotoHome1.jpg';
 import featureImg01 from '../assets/images/cat1.png';
 import featureImg02 from '../assets/images/cat2.png';
-
-import ProductCard from '../components/UI/product-card/ProductCard';
-import products from '../assets/fake-data/products';
 import devImg from '../assets/images/devImg.jpg';
 import networkImg from '../assets/images/networkImg.jpg';
-import TestimonialSlider from '../components/UI/slider/TestimonialSlider';
 
 import { ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 
 const featureData = [
   {
@@ -42,7 +43,6 @@ const Home = () => {
   const [allProducts, setAllProducts] = useState(products);
 
   const [limitedSmartphone, setLimitedSmartphone] = useState([]);
-  const [limitedSmartphone2, setLimitedSmartphone2] = useState([]);
 
   useEffect(() => {
     const filteredSmartphone = products.filter(
@@ -51,12 +51,6 @@ const Home = () => {
     const sliceSmartphone = filteredSmartphone.slice(0, 4);
     setLimitedSmartphone(sliceSmartphone);
   }, []);
-
-  // useEffect(()=> {
-  //     const filteredSmartphone2 = products.filter(item=> item.category === 'Smartphone')
-  //     const sliceSmartphone2 = filteredSmartphone2.slice(6, 16)
-  //     setLimitedSmartphone2(sliceSmartphone2)
-  // }, [])
 
   useEffect(() => {
     if (category === 'ALL') {
@@ -90,6 +84,7 @@ const Home = () => {
                   <span>Lorem ipsum</span> Lorem dolor Lorem.
                   <span> ipsum dolor.</span>
                 </h1>
+
                 <p>
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Alias, ea praesentium. Perspiciatis animi id adipisci.
@@ -216,14 +211,6 @@ const Home = () => {
                 <ProductCard item={item} />
               </Col>
             ))}
-
-            {/* {
-                    limitedSmartphone2.map((item) => (
-                        <Col lg="3" md="4" sm="6" xs="6" className="mt-4" key={item.id}>
-                            <ProductCard item={item} />
-                        </Col>
-                    ))
-                } */}
           </Row>
         </Container>
       </section>

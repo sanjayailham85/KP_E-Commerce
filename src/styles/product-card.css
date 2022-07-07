@@ -108,4 +108,12 @@
         
         width: 80%;
     }
+
+    .Toastify__toast {
+        width: 60%;
+        height: 20px;
+        margin-top: 15px;
+        margin-bottom: 30px;
+        margin-left: 10rem;
+    }
 }
