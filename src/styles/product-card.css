@@ -1,17 +1,18 @@
 .product__item {
-    border: 1px solid #fde4e4;
+    border: 1px solid rgba(12, 93, 93, 0.459);
     text-align: center;
     padding: 30px;
     cursor: pointer;
+    border-radius: 10px;
+    
 }
 
 .product__img img {
     margin-bottom: 20px;
     transition: 0.4s;
-    /* max-width: 154px;
-    max-height: 154px;
-    min-height: 154px;
-    min-width: 154px; */
+    width: 100px;
+  height: 90px;
+  object-fit: contain;
 }
 
 .product__img:hover {
@@ -113,7 +114,7 @@
         width: 60%;
         height: 20px;
         margin-top: 15px;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
         margin-left: 10rem;
     }
 }

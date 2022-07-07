@@ -31,6 +31,14 @@
     background: transparent;
 }
 
+.why__img img {
+    width: 100%;
+}
+
+.hero__img img{
+    width: 100%;
+}
+
 .device__category button img{
     width: 30px;
     height: 30px;
@@ -193,6 +201,12 @@
     .device__category button img{
         width: 20px;
         height: 20px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .why__img {
+        width: 90%;
     }
 }
 

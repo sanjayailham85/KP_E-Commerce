@@ -31,7 +31,6 @@ const ProductCard = (props) => {
       pauseOnHover: true,
       draggable: false,
       progress: undefined,
-      className: 'notify',
     });
   };
 
@@ -41,7 +40,7 @@ const ProductCard = (props) => {
   };
 
   return (
-    <div className="product__item">
+    <div className="product__item ">
       <div className="product__img">
         <Link to={`/devices/${id}`}>
           <img src={image01} alt="product-img" className="w-100" />
