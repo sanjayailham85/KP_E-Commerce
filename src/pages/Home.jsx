@@ -44,6 +44,7 @@ const Home = () => {
 
   const [limitedSmartphone, setLimitedSmartphone] = useState([]);
 
+  //Filter slice(0,4) for limited smartphone
   useEffect(() => {
     const filteredSmartphone = products.filter(
       (item) => item.category === 'Smartphone'
@@ -52,6 +53,7 @@ const Home = () => {
     setLimitedSmartphone(sliceSmartphone);
   }, []);
 
+  //filter category
   useEffect(() => {
     if (category === 'ALL') {
       setAllProducts(products);

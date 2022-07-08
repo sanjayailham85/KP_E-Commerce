@@ -6,7 +6,6 @@
 
 .footer__logo img{
     width: 100px;
-    
 }
 
 .footer__logo h5 {
@@ -49,7 +48,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    cursor: pointer;
 }
 
 .newsletter input{
@@ -65,13 +63,12 @@
 .newsletter span {
     background: rgb(22, 128, 128);
     padding: 7px 10px;
-    
+    cursor: pointer;
     border-radius: 15%;
 }
 
 .newsletter span i {
     color: #fff;
-    
 }
 
 .newsletter input::placeholder {

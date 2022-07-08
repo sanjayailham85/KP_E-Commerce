@@ -2,7 +2,12 @@
     padding: 7px 15px;
     border: 1px solid #fde4ef;
     border-radius: 5px;
+    
+}
+
+.search__widget i{
     cursor: pointer;
+    
 }
 
 .search__widget input{

@@ -22,6 +22,7 @@ const ProductCard = (props) => {
     );
   };
 
+  //notification
   const notify = () => {
     toast.success('Item added to cart', {
       position: 'bottom-right',

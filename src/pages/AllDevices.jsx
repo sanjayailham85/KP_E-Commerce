@@ -15,6 +15,7 @@ const AllDevices = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [pageNumber, setPageNumber] = useState(0);
 
+  //pagination
   const productPerPage = 8;
   const visitedPage = pageNumber * productPerPage;
   const displayPage = products.slice(visitedPage, visitedPage + productPerPage);
@@ -77,8 +78,8 @@ const AllDevices = () => {
               <ReactPaginate
                 pageCount={pageCount}
                 onPageChange={changePage}
-                previousLabel="Prev"
-                nextLabel="Next"
+                previousLabel="<"
+                nextLabel=">"
                 containerClassName="paginationBttns"
               />
             </div>

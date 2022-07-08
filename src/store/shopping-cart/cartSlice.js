@@ -1,5 +1,4 @@
 
-
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
@@ -23,8 +22,6 @@ const cartSlice = createSlice(
                 state.totalQuantity++
     
                 if(!existingItem){
-                    
-                    // Video part 01 - 3:08:00
                     state.cartItems.push({
                         id: newItem.id,
                         title: newItem.title,

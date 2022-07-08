@@ -4,15 +4,14 @@
     padding: 30px;
     cursor: pointer;
     border-radius: 10px;
-    
 }
 
 .product__img img {
     margin-bottom: 20px;
     transition: 0.4s;
     width: 100px;
-  height: 90px;
-  object-fit: contain;
+    height: 90px;
+    object-fit: contain;
 }
 
 .product__img:hover {
@@ -53,8 +52,7 @@
 }
 
 @media only screen and (max-width:1024px) {
-  
-    
+
     .AddToCart__btn {
         padding: 5px 15px;
         font-size: .8rem;
@@ -106,7 +104,6 @@
     }
 
     .product__img img {
-        
         width: 80%;
     }
 

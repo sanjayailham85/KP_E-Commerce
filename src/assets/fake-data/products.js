@@ -1,4 +1,4 @@
-// all images imported from images directory
+
 import product_01_image_01 from "../images/hp1.jpg";
 import product_01_image_02 from "../images/hp2.jpg"
 import product_01_image_03 from "../images/hp5.jpg"
@@ -41,11 +41,6 @@ import product_19_image_01 from "../images/tablet9.jpg"
 
 import product_20_image_01 from "../images/tablet10.jpg"
 
-
-
-// import product_01_image_02 from "../images/product_01.1.jpg";
-// import product_01_image_03 from "../images/product_01.3.jpg";
-
 const products = [
   {
     id: "01",
@@ -54,10 +49,7 @@ const products = [
     image01: product_01_image_01,
     image02: product_01_image_02,
     image03: product_01_image_03,
-    // image02: product_01_image_02,
-    // image03: product_01_image_03,
     category: "Smartphone",
-
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque. ",
   },
 
@@ -68,10 +60,7 @@ const products = [
     image01: product_02_image_01,
     image02: product_01_image_02,
     image03: product_01_image_03,
-    // image02: product_01_image_02,
-    // image03: product_01_image_03,
     category: "Smartphone",
-
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque. ",
   },
 
@@ -82,10 +71,7 @@ const products = [
     image01: product_03_image_01,
     image02: product_01_image_02,
     image03: product_01_image_03,
-    // image02: product_01_image_02,
-    // image03: product_01_image_03,
     category: "Smartphone",
-
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque. ",
   },
 
@@ -96,10 +82,7 @@ const products = [
     image01: product_04_image_01,
     image02: product_01_image_02,
     image03: product_01_image_03,
-    // image02: product_01_image_02,
-    // image03: product_01_image_03,
     category: "Smartphone",
-
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque. ",
   },
 
@@ -110,10 +93,7 @@ const products = [
     image01: product_05_image_01,
     image02: product_01_image_02,
     image03: product_01_image_03,
-    // image02: product_01_image_02,
-    // image03: product_01_image_03,
     category: "Smartphone",
-
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque. ",
   },
 
@@ -124,10 +104,7 @@ const products = [
     image01: product_06_image_01,
     image02: product_01_image_02,
     image03: product_01_image_03,
-    // image02: product_01_image_02,
-    // image03: product_01_image_03,
     category: "Smartphone",
-
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque. ",
   },
 
@@ -138,10 +115,7 @@ const products = [
     image01: product_07_image_01,
     image02: product_01_image_02,
     image03: product_01_image_03,
-    // image02: product_01_image_02,
-    // image03: product_01_image_03,
     category: "Smartphone",
-
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque. ",
   },
 
@@ -152,10 +126,7 @@ const products = [
     image01: product_08_image_01,
     image02: product_01_image_02,
     image03: product_01_image_03,
-    // image02: product_01_image_02,
-    // image03: product_01_image_03,
     category: "Smartphone",
-
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque. ",
   },
 
@@ -166,10 +137,7 @@ const products = [
     image01: product_09_image_01,
     image02: product_01_image_02,
     image03: product_01_image_03,
-    // image02: product_01_image_02,
-    // image03: product_01_image_03,
     category: "Smartphone",
-
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque. ",
   },
 
@@ -180,10 +148,7 @@ const products = [
     image01: product_10_image_01,
     image02: product_01_image_02,
     image03: product_01_image_03,
-    // image02: product_01_image_02,
-    // image03: product_01_image_03,
     category: "Smartphone",
-
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque. ",
   },
 
@@ -194,10 +159,7 @@ const products = [
     image01: product_11_image_01,
     image02: product_01_image_02,
     image03: product_01_image_03,
-    // image02: product_01_image_02,
-    // image03: product_01_image_03,
     category: "Tablet",
-
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque. ",
   },
 
@@ -208,10 +170,7 @@ const products = [
     image01: product_12_image_01,
     image02: product_01_image_02,
     image03: product_01_image_01,
-    // image02: product_01_image_02,
-    // image03: product_01_image_03,
     category: "Tablet",
-
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque. ",
   },
 
@@ -222,10 +181,7 @@ const products = [
     image01: product_13_image_01,
     image02: product_01_image_01,
     image03: product_01_image_01,
-    // image02: product_01_image_02,
-    // image03: product_01_image_03,
     category: "Tablet",
-
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque. ",
   },
 
@@ -236,10 +192,7 @@ const products = [
     image01: product_14_image_01,
     image02: product_01_image_02,
     image03: product_01_image_03,
-    // image02: product_01_image_02,
-    // image03: product_01_image_03,
     category: "Tablet",
-
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque. ",
   },
 
@@ -250,10 +203,7 @@ const products = [
     image01: product_15_image_01,
     image02: product_01_image_02,
     image03: product_01_image_03,
-    // image02: product_01_image_02,
-    // image03: product_01_image_03,
     category: "Tablet",
-
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque. ",
   },
 
@@ -264,10 +214,7 @@ const products = [
     image01: product_16_image_01,
     image02: product_01_image_02,
     image03: product_01_image_03,
-    // image02: product_01_image_02,
-    // image03: product_01_image_03,
     category: "Tablet",
-
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque. ",
   },
 
@@ -278,10 +225,7 @@ const products = [
     image01: product_17_image_01,
     image02: product_01_image_02,
     image03: product_01_image_03,
-    // image02: product_01_image_02,
-    // image03: product_01_image_03,
     category: "Tablet",
-
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque. ",
   },
 
@@ -292,10 +236,7 @@ const products = [
     image01: product_18_image_01,
     image02: product_01_image_02,
     image03: product_01_image_03,
-    // image02: product_01_image_02,
-    // image03: product_01_image_03,
     category: "Tablet",
-
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque. ",
   },
 
@@ -306,10 +247,7 @@ const products = [
     image01: product_19_image_01,
     image02: product_01_image_02,
     image03: product_01_image_03,
-    // image02: product_01_image_02,
-    // image03: product_01_image_03,
     category: "Tablet",
-
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque. ",
   },
 
@@ -320,14 +258,9 @@ const products = [
     image01: product_20_image_01,
     image02: product_01_image_02,
     image03: product_01_image_03,
-    // image02: product_01_image_02,
-    // image03: product_01_image_03,
     category: "Tablet",
-
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque. ",
   },
-
-
 ];
 
 export default products;
