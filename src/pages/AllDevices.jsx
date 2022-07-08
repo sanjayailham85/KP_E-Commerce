@@ -9,7 +9,6 @@ import ProductCard from '../components/UI/product-card/ProductCard';
 
 import '../styles/all-devices.css';
 import '../styles/pagination.css';
-import 'react-toastify/dist/ReactToastify.css';
 
 const AllDevices = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -86,8 +85,6 @@ const AllDevices = () => {
           </Row>
         </Container>
       </section>
-
-      {/* <ToastContainer /> */}
     </Helmet>
   );
 };
