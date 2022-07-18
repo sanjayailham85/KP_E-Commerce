@@ -6,6 +6,8 @@ import CommonSection from '../components/UI/common-section/CommonSection';
 import ReactPaginate from 'react-paginate';
 import products from '../assets/fake-data/products';
 import ProductCard from '../components/UI/product-card/ProductCard';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import '../styles/all-devices.css';
 import '../styles/pagination.css';
@@ -82,6 +84,7 @@ const AllDevices = () => {
                 containerClassName="paginationBttns"
               />
             </div>
+            <ToastContainer />
           </Row>
         </Container>
       </section>

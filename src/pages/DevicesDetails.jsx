@@ -8,6 +8,8 @@ import '../styles/product-details.css';
 import ProductCard from '../components/UI/product-card/ProductCard';
 import { cartActions } from '../store/shopping-cart/cartSlice';
 import { useDispatch } from 'react-redux';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const DevicesDetails = () => {
   const [tab, setTab] = useState('desc');
@@ -196,6 +198,7 @@ const DevicesDetails = () => {
                 <ProductCard item={item} />
               </Col>
             ))}
+            <ToastContainer />
           </Row>
         </Container>
       </section>
