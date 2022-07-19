@@ -1,44 +1,99 @@
 .footer {
-    padding: 50px 0px;
     background: rgb(226, 253, 255);
-    margin-top: 50px;
+    
 }
 
-.footer__logo img{
+.footer__logo {
     width: 100px;
+    height: 100px;
+    background: rgb(214, 238, 240);
+
 }
 
-.footer__logo h5 {
-    font-weight: 200;
-    font-size: 1rem;
-    margin-bottom: 15px;
-    padding-left: 37px;
+.social__links, .customer__care, .top__searches, .my__account {
+    background: transparent !important;
 }
 
-.footer__logo p {
-    font-size: 0.7rem;
-    color: #333;
-    line-height: 28px;
+.cc, .ts, .ma, .nl {
+    margin-top: 2rem;
 }
 
-.delivery__time-item {
-   background: transparent !important;
+.cc h5, .ts h5, .ma h5, .nl h5 {
+    font-size: 19px;
 }
 
-.delivery__time-item span{
-    font-weight: 600;
-    font-size: 1rem;
-    color: #333;
+.footer__c {
+    background-color: rgb(214, 238, 240) ;
 }
 
-.delivery__time-item p {
-    color: #333;
+.logo__desc {
+    font-size: 13px;
+    color: #777;
 }
 
-.footer__title {
-    font-weight: 700;
-    font-size: 1.1rem;
-    color: #333;
+.social__links {
+    margin-left: 18px;
+}
+
+.social__links a{
+    padding: 7px 3px;
+    text-decoration: none;
+    color: white;
+}
+
+.social__links a i {
+    padding: 5px;
+    border: 1px solid;
+    border-radius: 15px;
+    
+}
+
+#fb, #ig, #github, #yt, #twitter {
+    background-color: rgba(23, 127, 127, 0.779) ;
+}
+
+.social__links a:hover {
+    color: white;
+}
+
+#fb:hover {
+    background-color: #4267B2;
+}
+
+#ig:hover {
+    background-color: #E1306C;
+}
+
+#github:hover {
+    background-color: #171515 ;
+}
+
+#yt:hover {
+    background-color: #FF0000;
+}
+
+#twitter:hover {
+    background-color: #1DA1F2;
+}
+
+.customer__care, .top__searches, .my__account {
+    margin-top: 10px;
+    padding-left: 0;
+}
+
+.customer__care a, .top__searches a, .my__account a {
+    text-decoration: none;
+    color: #777;
+    
+}
+
+.customer__care a:hover, .top__searches a:hover, .my__account a:hover {
+    color: black;
+}
+
+.my__account {
+
+    text-decoration: none;
 }
 
 .newsletter {
@@ -51,6 +106,7 @@
 }
 
 .newsletter input{
+    width: 100%;
     background: transparent;
     border: none;
     outline: none;
@@ -62,7 +118,7 @@
 
 .newsletter span {
     background: rgb(22, 128, 128);
-    padding: 7px 10px;
+    padding: 7px;
     cursor: pointer;
     border-radius: 15%;
 }
@@ -75,51 +131,91 @@
     color: #333;
 }
 
-@media only screen and (max-width:1024px) {
-    .newsletter span {
-        margin-left: -40px;
+.newsletter__desc {
+    color: #777;
+}
+
+.footer__c {
+    font-weight: 600;
+}
+
+@media only screen and (max-width:360px) {
+    .footer__c {
+        font-size: .7rem;
     }
 
-}
-
-.social__links span i {
-    border-radius: 50%;
-    background: rgb(22, 128, 128);
-    color: #fff;
-    padding: 5px;
-    border: 1px #333 solid;
-}
-
-.copyright__text {
-    font-style: 0.8rem;
-    color: rgb(22, 128, 128);
-}
-
-@media only screen and (max-width:576px) {
-    .social__links {
+    .footer__row {
         justify-content: center;
     }
 
-    .social__links p {
+    .cc h5, .ts h5, .ma h5, .nl h5 {
+        font-size: .9rem;
+
+    }
+
+    .newsletter input {
         font-size: .8rem;
     }
 
-    .social__links span {
-        padding: 4px;
+    
+}
+
+
+
+/* 
+@media only screen and (max-width:576px) {
+   .cc, .ts, .ma {
+    font-size: .8rem;
+   }
+
+   .cc h5, .ts h5, .ma h5 {
+    font-size: .8rem;
+   }
+
+   .nl {
+    margin-bottom: 20px;
+    font-size: 0.8rem;
+   }
+}
+
+@media only screen and (max-width:1199px) {
+    .footer {
+        margin-top: 4rem;
     }
 
-    .social__links span a {
-        font-size: 0.7rem;
+    
+
+    
+}
+
+
+@media only screen and (max-width:991px) {
+    .footer__logo {
+        padding-right: 10px;
     }
 
-    .copyright__text {
-        font-size: .8rem;
-        text-align: center;
+    .ma, .nl {
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
+}
+
+@media only screen and (max-width:767px) {
+    .ts {
+        margin-top: 0;
     }
 }
 
-@media only screen and (max-width:375px) {
-    .footer__title {
-        margin-top: 15px;
-    }
-}
+@media only screen and (max-width:360px) {
+    .cc, .ts, .ma {
+        justify-content: center;
+        margin-top: 0;
+        margin-right: 0;
+       }
+    
+       .cc h5, .ts h5, .ma h5 {
+        justify-content: center;
+       }
+    
+} */
