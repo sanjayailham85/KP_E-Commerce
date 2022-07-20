@@ -19,6 +19,11 @@ import devImg from '../assets/images/devImg.jpg';
 import networkImg from '../assets/images/networkImg.jpg';
 
 import { ToastContainer } from 'react-toastify';
+import { AiOutlineArrowUp } from 'react-icons/ai';
+import { AiOutlineShoppingCart } from 'react-icons/ai';
+
+import { useDispatch } from 'react-redux';
+import { cartUiActions } from '../store/shopping-cart/cartUiSlice';
 
 const featureData = [
   {
@@ -41,8 +46,31 @@ const featureData = [
 const Home = () => {
   const [category, setCategory] = useState('ALL');
   const [allProducts, setAllProducts] = useState(products);
-
+  const [visible, setVisible] = useState(false);
   const [limitedSmartphone, setLimitedSmartphone] = useState([]);
+  const dispatch = useDispatch();
+
+  const toggleCart = () => {
+    dispatch(cartUiActions.toggle());
+  };
+
+  const toggleVisible = () => {
+    const scrolled = document.documentElement.scrollTop;
+    if (scrolled > 50) {
+      setVisible(true);
+    } else if (scrolled <= 50) {
+      setVisible(false);
+    }
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
+
+  window.addEventListener('scroll', toggleVisible);
 
   //Filter slice(0,4) for limited smartphone
   useEffect(() => {
@@ -80,6 +108,29 @@ const Home = () => {
         <section>
           <Container>
             <Row>
+              <div>
+                <button
+                  onClick={scrollToTop}
+                  style={{ display: visible ? 'inline' : 'none' }}
+                  type="button"
+                  id="to-top"
+                  className="btn rounded-circle btn-lg"
+                >
+                  <AiOutlineArrowUp />
+                </button>
+              </div>
+
+              <div>
+                <button
+                  onClick={toggleCart}
+                  type="button"
+                  id="cart__corner"
+                  className="btn rounded-circle btn-lg"
+                >
+                  <AiOutlineShoppingCart />
+                </button>
+              </div>
+
               <Col lg="6" md="6">
                 <div className="hero__content">
                   <h5 className="mb-3">Lorem ipsum dolor sit amet</h5>

@@ -1,13 +1,11 @@
 .footer {
-    background: rgb(226, 253, 255);
-    
+    background: rgb(7, 58, 61);
+    margin-top: 4rem;
 }
 
 .footer__logo {
     width: 100px;
     height: 100px;
-    background: rgb(214, 238, 240);
-
 }
 
 .social__links, .customer__care, .top__searches, .my__account {
@@ -20,15 +18,23 @@
 
 .cc h5, .ts h5, .ma h5, .nl h5 {
     font-size: 19px;
+    color: rgb(248, 245, 245);
+    font-weight: 600;
 }
 
 .footer__c {
-    background-color: rgb(214, 238, 240) ;
+    background-color: rgb(6, 47, 49) ;
+    font-weight: 600;
+    color: rgb(219, 216, 216);
+}
+
+.footer__c p {
+    color: rgb(219, 216, 216);
 }
 
 .logo__desc {
     font-size: 13px;
-    color: #777;
+    color: rgb(219, 216, 216);
 }
 
 .social__links {
@@ -48,31 +54,31 @@
     
 }
 
-#fb, #ig, #github, #yt, #twitter {
+/* #fb, #ig, #github, #yt, #twitter {
     background-color: rgba(23, 127, 127, 0.779) ;
-}
+} */
 
 .social__links a:hover {
     color: white;
 }
 
-#fb:hover {
+#fb{
     background-color: #4267B2;
 }
 
-#ig:hover {
+#ig{
     background-color: #E1306C;
 }
 
-#github:hover {
+#github {
     background-color: #171515 ;
 }
 
-#yt:hover {
+#yt {
     background-color: #FF0000;
 }
 
-#twitter:hover {
+#twitter {
     background-color: #1DA1F2;
 }
 
@@ -83,8 +89,7 @@
 
 .customer__care a, .top__searches a, .my__account a {
     text-decoration: none;
-    color: #777;
-    
+    color: rgb(219, 216, 216); 
 }
 
 .customer__care a:hover, .top__searches a:hover, .my__account a:hover {
@@ -92,13 +97,12 @@
 }
 
 .my__account {
-
     text-decoration: none;
 }
 
 .newsletter {
     padding: 7px ;
-    border: 1px solid #333;
+    border: 1px solid #fff;
     border-radius: 5px;
     display: flex;
     justify-content: space-between;
@@ -109,7 +113,7 @@
     width: 100%;
     background: transparent;
     border: none;
-    outline: none;
+    outline: none; 
 }
 
 .newsletter input:focus {
@@ -128,20 +132,16 @@
 }
 
 .newsletter input::placeholder {
-    color: #333;
+    color: rgb(219, 216, 216);
 }
 
 .newsletter__desc {
-    color: #777;
-}
-
-.footer__c {
-    font-weight: 600;
+    color: rgb(219, 216, 216);
 }
 
 @media only screen and (max-width:360px) {
     .footer__c {
-        font-size: .7rem;
+        font-size: .6rem;
     }
 
     .footer__row {
@@ -159,63 +159,3 @@
 
     
 }
-
-
-
-/* 
-@media only screen and (max-width:576px) {
-   .cc, .ts, .ma {
-    font-size: .8rem;
-   }
-
-   .cc h5, .ts h5, .ma h5 {
-    font-size: .8rem;
-   }
-
-   .nl {
-    margin-bottom: 20px;
-    font-size: 0.8rem;
-   }
-}
-
-@media only screen and (max-width:1199px) {
-    .footer {
-        margin-top: 4rem;
-    }
-
-    
-
-    
-}
-
-
-@media only screen and (max-width:991px) {
-    .footer__logo {
-        padding-right: 10px;
-    }
-
-    .ma, .nl {
-        margin-top: 0;
-        margin-bottom: 10px;
-    }
-
-}
-
-@media only screen and (max-width:767px) {
-    .ts {
-        margin-top: 0;
-    }
-}
-
-@media only screen and (max-width:360px) {
-    .cc, .ts, .ma {
-        justify-content: center;
-        margin-top: 0;
-        margin-right: 0;
-       }
-    
-       .cc h5, .ts h5, .ma h5 {
-        justify-content: center;
-       }
-    
-} */

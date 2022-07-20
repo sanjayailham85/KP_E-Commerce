@@ -85,6 +85,35 @@
     line-height: 30px;
 }
 
+ #to-top {
+  position: fixed;
+  bottom: 5rem;
+  right: 20px;
+  border: none;
+  background: linear-gradient(to right, #43cea2, #185a9d);
+  display: none;
+  z-index: 99;
+  font-weight: 600;
+}
+
+#cart__corner {
+    position: fixed;
+    bottom: 1rem;
+    right: 20px;
+    border: none;
+    background: linear-gradient(to right, #43cea2, #185a9d);
+    display: inline;
+    z-index: 99;
+    font-weight: 600;
+  }
+
+svg {
+    margin-bottom: 5px;
+    color: #fff;
+    width: 20px;
+}
+
+
 @media only screen and (max-width: 768px) {
 
     .hero__content h5{

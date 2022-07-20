@@ -14,7 +14,7 @@ const Footer = () => {
       <Container fluid>
         <Row className="footer__row justify-content-between mb-3 ">
           <Col lg="2" md="3" sm="4">
-            <div className="footer__logo rounded-circle d-flex align-items-center justify-content-center mb-4 mx-auto mt-3">
+            <div className="footer__logo d-flex align-items-center justify-content-center mx-auto mt-2">
               <img src={logo} alt="footer-logo" className="w-75" />
             </div>
 
@@ -52,10 +52,10 @@ const Footer = () => {
               </h5>
               <ListGroup>
                 <ListGroupItem className="customer__care border-0 ps-0 m-0 ">
-                  <Link to="">
+                  <Link to={`/about-us`}>
                     <p>About Us</p>
                   </Link>
-                  <Link to="">
+                  <Link to={`/contact`}>
                     <p>Contact</p>
                   </Link>
                   <Link to="">
@@ -102,13 +102,13 @@ const Footer = () => {
               </h5>
               <ListGroup>
                 <ListGroupItem className="my__account border-0 ps-0 m-0">
-                  <Link to="">
+                  <Link to={`/register`}>
                     <p>Register</p>
                   </Link>
-                  <Link to="">
+                  <Link to={`/login`}>
                     <p>Login</p>
                   </Link>
-                  <Link to="">
+                  <Link to={`/cart`}>
                     <p>My Cart</p>
                   </Link>
                 </ListGroupItem>
@@ -135,8 +135,8 @@ const Footer = () => {
       </Container>
 
       <div className="footer__c d-flex justify-content-center p-3 pb-0 gap-2">
-        © 2020 Copyright:
-        <p>Website made by -- . All Rights Reserved.</p>
+        © Copyright 2022
+        <p>QNN E-Commerce. All Rights Reserved.</p>
       </div>
     </footer>
   );

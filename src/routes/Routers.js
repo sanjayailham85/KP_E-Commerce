@@ -9,6 +9,7 @@ import DevicesDetails from '../pages/DevicesDetails'
 import Home from '../pages/Home'
 import Login from '../pages/Login'
 import Register from '../pages/Register'
+import AboutUs from "../pages/AboutUs";
 
 const Routers = () => {
     return (
@@ -20,6 +21,7 @@ const Routers = () => {
         <Route path="/cart" element={<Cart/>}/>
         <Route path="/checkout" element={<Checkout/>}/>
         <Route path="/contact" element={<Contact/>}/>
+        <Route path="/about-us" element={<AboutUs/>}/>
         <Route path="/login" element={<Login/>}/>
         <Route path="/register" element={<Register/>}/>
     </Routes>
