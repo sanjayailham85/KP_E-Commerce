@@ -3,6 +3,7 @@ import Helmet from '../components/Helmet/Helmet';
 import CommonSection from '../components/UI/common-section/CommonSection';
 import { Container, Row, Col } from 'reactstrap';
 import { Link } from 'react-router-dom';
+import '../styles/login.css';
 
 const Login = () => {
   const loginNameRef = useRef();
@@ -43,12 +44,14 @@ const Login = () => {
                 </button>
               </form>
 
-              <h6>
-                Don't have an account?{' '}
-                <span>
-                  <Link to="/register">Create an account</Link>{' '}
-                </span>
-              </h6>
+              <div className="login">
+                <h6>
+                  Don't have an account?
+                  <span>
+                    <Link to="/register">Create an account</Link>{' '}
+                  </span>
+                </h6>
+              </div>
             </Col>
           </Row>
         </Container>

@@ -208,7 +208,7 @@ const Home = () => {
               </Col>
 
               <Col lg="12">
-                <div className="device__category d-flex align -items-center justify-content-center gap-4">
+                <div className="device__category d-flex">
                   <button
                     className={`all__btn ${
                       category === 'ALL' ? 'deviceBtnActive' : ''

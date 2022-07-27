@@ -1,0 +1,10 @@
+
+@media only screen and (max-width: 360px) {
+    .login h6 {
+        font-size: .8rem;
+    }
+
+    .login h6 span {
+        padding-left: 5px;
+    }
+}

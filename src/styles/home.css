@@ -14,17 +14,35 @@
     color: #777;
 }
 
+.hero__btns button {
+    background: linear-gradient(to right, #43cea2, #185a9d);
+    transition: .5s;
+}
+
+.hero__btns button:hover {
+    background: linear-gradient(to right, #37a985, #134a81);
+}
+
+.all__devices-btn {
+    border: none !important;
+}
+
 .all__devices-btn a{
-    color: #333;
+    color: #fff;
+}
+
+.all__devices-btn a:hover {
+    color: #fff;
 }
 
 .device__category {
-    background: rgba(121, 220, 220, 0.564);
+    background: linear-gradient(to right, #43cea2, #185a9d);   
     text-align: center;
     margin-top: 30px;
-    padding: 20px 0px;
+    padding: 20px 10px;
     border-radius: 8px;
     margin-bottom: 10px;
+    gap: 30px;
 }
 
 .device__category button {
@@ -42,9 +60,23 @@
     width: 100%;
 }
 
+.device__category {
+    justify-content: center;
+}
+
 .device__category button img{
     width: 30px;
     height: 30px;
+}
+
+.device__category button {
+    transition: .2s;
+}
+
+.device__category button:hover {
+    background: #fff;
+    border-radius: 5px;
+    transform: scale(1.1);
 }
 
 .deviceBtnActive {
@@ -60,6 +92,14 @@
 .device__shop-desc {
     color: #777;
     line-height: 28px;
+}
+
+.category__item {
+    background: linear-gradient(to right, #43cea2, #185a9d);   
+}
+
+.category__item h6 {
+    color: #fff;
 }
 
 .choose__us-title {
@@ -235,6 +275,16 @@ svg {
 @media only screen and (max-width: 425px) {
     .why__img {
         width: 90%;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .device__category {
+        gap: 10px ; 
+    }
+
+    .hero__service p {
+        font-size: .8rem;
     }
 }
 

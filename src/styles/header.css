@@ -2,10 +2,17 @@
     width: 100%;
     line-height: 80px;
     height: 80px;
-    margin-top: 5px;
     margin-bottom: 20px;
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+    box-shadow: #11111a1a 0px 1px 0px;
+    background: linear-gradient(to right, #43cea2, #185a9d);   
+    top: 0;
+}
 
+.header__shrink {
+    position: sticky;
+    top: 0;
+    background: linear-gradient(to right, #43cea2, #185a9d);   
+    z-index: 99999;
 }
 
 .logo {
@@ -30,24 +37,27 @@
 .menu a {
     font-weight: 600;
     font-style: 1rem;
-    color: #212245;
-    transition: .3s;
+    
+    color: rgb(206, 206, 206);
+    transition: border 2s;
     text-decoration: none;
+    transition: .3s;
 }
 
 .menu a:hover {
-    color: rgb(22, 128, 128);
+    color: #fff;
 }
 
 .active__menu {
-    color: rgb(22, 128, 128)!important;
+    color: #fff !important;
+
 }
 
 .cart__icon i, 
 .user i, 
 .mobile__menu i {
     font-size: 1.3rem;
-    color: #212245;
+    color: #fff;
     cursor: pointer;
 }
 
@@ -55,8 +65,18 @@
     text-decoration: none;
 }
 
+.user a i {
+    color: white;
+
+}
+
 .cart__icon {
     position: relative;
+}
+
+.cart__icon i {
+    color: white;
+
 }
 
 .cart__badge {
@@ -81,15 +101,7 @@
     display: none;
     font-weight: 600;
     margin-top: 5px;
-}
-
-.header__shrink {
-    position: sticky;
-    top: 0;
-    left: 0;
-    background: #fff;
-    z-index: 99999;
-    
+    color: white;
 }
 
 @media only screen and (max-width:992px){
@@ -167,4 +179,11 @@
         margin-top: -15px;
     }
    
+}
+
+@media only screen and (max-width: 360px) {
+    .mobile__menu{
+        margin: 0;
+        top: 0;
+    }
 }
