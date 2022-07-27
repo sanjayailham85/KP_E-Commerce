@@ -90,6 +90,7 @@
 .customer__care a, .top__searches a, .my__account a {
     text-decoration: none;
     color: rgb(219, 216, 216); 
+    transition: .2s;
 }
 
 .customer__care a:hover, .top__searches a:hover, .my__account a:hover {
