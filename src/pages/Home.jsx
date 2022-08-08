@@ -95,7 +95,7 @@ const Home = () => {
 
   return (
     <Helmet title="Home">
-      <Container fluid>
+      <Container fluid className="p-0 mt-5">
         <section>
           <Container>
             <Row>

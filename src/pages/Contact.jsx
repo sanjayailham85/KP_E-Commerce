@@ -1,14 +1,14 @@
 import React from 'react';
 import '../styles/contact.css';
 import contactImg from '../assets/images/contact.jpg';
-import { Container, Row, Col, ListGroup, ListGroupItem } from 'reactstrap';
+import { Container, Row, Col } from 'reactstrap';
 import Helmet from '../components/Helmet/Helmet';
 
 const Contact = () => {
   return (
     <Helmet title="Contact">
       <Container>
-        <Row>
+        <Row className="mt-5">
           <Col lg="6">
             <img
               src={contactImg}

@@ -133,7 +133,6 @@ const Footer = () => {
           </Col>
         </Row>
       </Container>
-
       <div className="footer__c d-flex justify-content-center p-3 pb-0 gap-2">
         © Copyright 2022
         <p>QNN E-Commerce. All Rights Reserved.</p>
